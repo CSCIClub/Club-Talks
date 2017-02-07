@@ -1,0 +1,58 @@
+
+
+https://docs.docker.com/engine/installation
+
+## Linux
+
+- Most likely in your repository
+- Useful to add your user to the *docker* group
+
+```
+sudo gpasswd -a $USER docker
+```
+
+## Windows
+
+Windows is able to run docker if you have the a PRO version. Otherwise use
+docker-machine that uses virtual-box on the back-end.
+
+## Docker-machine
+
+Sets up a working docker environment
+
+# Basics
+
+## Docker images
+
+- Blueprint for running containers
+
+## Docker Containers
+
+ok
+
+## Docker Repositories
+
+- Place to store images
+- Automated builds
+- Find other useful images
+
+# Simple Use Cases
+
+## Running a test box Quickly
+
+``` bash
+docker pull ubuntu:14.04
+docker run -tid ubuntu:14.04 /bin/bash
+```
+
+## Spacegame
+
+stuff
+
+## Docker-compose
+
+sets up multiple docker containers
+
+# Example Docker compose app
+
+ok
