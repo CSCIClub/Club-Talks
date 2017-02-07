@@ -54,20 +54,16 @@ tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
 <h2 id="docker-machine">Docker-machine</h2>
 <p>Sets up a working docker environment in a virtual machine</p>
 <h1 id="basics">Basics</h1>
-<h2 id="docker-containers">Docker Containers</h2>
-<p>Running image</p>
-<pre><code>docker run --name ubuntutestdrive -tid ubuntu
-docker attach ubuntutestdrive
-docker ps -a</code></pre>
 <h2 id="docker-images">Docker images</h2>
-<ul>
-<li>Blueprint for running containers</li>
-</ul>
-<h2 id="docker-repositories">Docker Repositories</h2>
-<ul>
-<li>Place to store images</li>
-<li>Automated builds</li>
-<li>Find other useful images</li>
-</ul>
+<p>Blueprint for running containers</p>
+<p>Get them from Docker hub</p>
+<pre><code>docker pull ubuntu:latest</code></pre>
+<h2 id="docker-containers">Docker Containers</h2>
+<p>A running image</p>
+<pre><code>docker run --name ubuntutestdrive -ti ubuntu
+docker ps -a</code></pre>
+<h1 id="composing-containers">Composing Containers</h1>
+<h2 id="docker-compose">Docker Compose</h2>
+<p>Docker compose may be used to simplify setup up a series of services for an app</p>
 </body>
 </html>

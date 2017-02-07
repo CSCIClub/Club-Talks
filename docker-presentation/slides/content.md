@@ -68,12 +68,8 @@ docker run --name ubuntutestdrive -ti ubuntu
 docker ps -a
 ```
 
-## Building your own images
+# Composing Containers
 
-Dockerfiles are the blueprint that are use to build an image
+## Docker Compose
 
-## Docker Hub
-
-- Place to store images
-- Explore publicly available images
-- Automated builds with git
+Docker compose may be used to simplify setup up a series of services for an app

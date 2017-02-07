@@ -54,6 +54,7 @@
           <li><a href="#/why-docker">Why Docker</a></li>
           <li><a href="#/installation">Installation</a></li>
           <li><a href="#/basics">Basics</a></li>
+          <li><a href="#/composing-containers">Composing Containers</a></li>
           </ul>
         </section>
                 
@@ -95,24 +96,20 @@
         <h2>Docker-machine</h2>
         <p>Sets up a working docker environment in a virtual machine</p>
         </section></section>
-        <section><section id="basics" class="titleslide slide level1"><h1>Basics</h1></section><section id="docker-containers" class="slide level2">
-        <h2>Docker Containers</h2>
-        <p>Running image</p>
-        <pre><code>docker run --name ubuntutestdrive -tid ubuntu
-        docker attach ubuntutestdrive
-        docker ps -a</code></pre>
-        </section><section id="docker-images" class="slide level2">
+        <section><section id="basics" class="titleslide slide level1"><h1>Basics</h1></section><section id="docker-images" class="slide level2">
         <h2>Docker images</h2>
-        <ul>
-        <li>Blueprint for running containers</li>
-        </ul>
-        </section><section id="docker-repositories" class="slide level2">
-        <h2>Docker Repositories</h2>
-        <ul>
-        <li>Place to store images</li>
-        <li>Automated builds</li>
-        <li>Find other useful images</li>
-        </ul>
+        <p>Blueprint for running containers</p>
+        <p>Get them from Docker hub</p>
+        <pre><code>docker pull ubuntu:latest</code></pre>
+        </section><section id="docker-containers" class="slide level2">
+        <h2>Docker Containers</h2>
+        <p>A running image</p>
+        <pre><code>docker run --name ubuntutestdrive -ti ubuntu
+        docker ps -a</code></pre>
+        </section></section>
+        <section><section id="composing-containers" class="titleslide slide level1"><h1>Composing Containers</h1></section><section id="docker-compose" class="slide level2">
+        <h2>Docker Compose</h2>
+        <p>Docker compose may be used to simplify setup up a series of services for an app</p>
         </section></section>
       </div>
     </div>
